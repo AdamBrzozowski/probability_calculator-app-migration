@@ -3,6 +3,7 @@ package com.projects.probability_calculator_app_migration;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,9 +14,9 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-//        Button btnOP = findViewById(R.id.btnOP);
-//
-//        btnOP.setOnClickListener(this);
+        Button btnOP = findViewById(R.id.btnOP);
+
+        btnOP.setOnClickListener(this);
 //
 //        Button btnErl = findViewById(R.id.btnErl);
 //
@@ -37,12 +38,10 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         Intent i;
-//        switch (v.getId()) {
-//            case R.id.btnOP:
-//                i = new Intent(this, OutageActivity.class);
-//                startActivity(i);
-//                break;
-//
+        if (v.getId() == R.id.btnOP) {
+            i = new Intent(this, OutageActivity.class);
+            startActivity(i);
+            //
 //            case R.id.btnErl:
 //                i = new Intent(this, ErlangActivity.class);
 //                startActivity(i);
@@ -59,6 +58,6 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
 //                i = new Intent(this, BinomialActivity.class);
 //                startActivity(i);
 //                break;
-//        }
+        }
     }
 }
