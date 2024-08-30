@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.probability_calculator_app_migration"
+    namespace = "com.projects.probability_calculator_app_migration"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.probability_calculator_app_migration"
+        applicationId = "com.projects.probability_calculator_app_migration"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

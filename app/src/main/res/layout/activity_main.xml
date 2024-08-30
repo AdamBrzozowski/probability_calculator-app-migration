@@ -61,7 +61,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/designed_by_alessio_scarpelli_adam_brwzkoscki"
+        android:text="@string/designed_by_adam_brzozowski"
         android:fontFamily="@font/orbitron_regular"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"

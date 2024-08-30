@@ -87,7 +87,7 @@
     <string name="msg_value_antenna_threesect_case">Value for three-sector case is :</string>
     <string name="university_of_rome_tor_vergata">University of Rome Tor Vergata</string>
     <string name="department_of_computer_engeeniering">Department of Computer Engeeniering</string>
-    <string name="designed_by_alessio_scarpelli_adam_brwzkoscki">Designed by Alessio Scarpelli, Adam Brzozowski</string>
+    <string name="designed_by_adam_brzozowski">Designed by Adam Brzozowski</string>
     <string name="version">Version 1.0.0</string>
     <string name="km">" Km"</string>
     <string name="squareKm">" Km²"</string>
