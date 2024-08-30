@@ -29,10 +29,10 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         Button btnPoisson = findViewById(R.id.btnPoisson);
 
         btnPoisson.setOnClickListener(this);
-//
-//        Button btnBinomial = findViewById(R.id.btnBinomial);
-//
-//        btnBinomial.setOnClickListener(this);
+
+        Button btnBinomial = findViewById(R.id.btnBinomial);
+
+        btnBinomial.setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +65,10 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         }
         else if (v.getId() == R.id.btnErl) {
             i = new Intent(this, ErlangActivity.class);
+            startActivity(i);
+        }
+        else if (v.getId() == R.id.btnBinomial) {
+            i = new Intent(this, BinomialActivity.class);
             startActivity(i);
         }
     }

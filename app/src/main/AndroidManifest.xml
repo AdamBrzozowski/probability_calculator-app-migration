@@ -30,6 +30,7 @@
         <activity
             android:name=".ErlangActivity"
             android:label="ErlangB" />
+        <activity android:name=".BinomialActivity" android:label="Binomial"></activity>
     </application>
 
 </manifest>

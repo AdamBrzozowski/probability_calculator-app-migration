@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BinomialActivity">
+
+    <TextView
+        android:id="@+id/tvDescriptionB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/tv_basic_style"
+        android:fontFamily="@font/orbitron_regular"
+        android:text="@string/select_something"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUsersB"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:fontFamily="@font/orbitron_regular"
+        android:hint="N"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionB" />
+
+    <EditText
+        android:id="@+id/etKB"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:fontFamily="@font/orbitron_regular"
+        android:hint="K"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/etTrafficB"
+        app:layout_constraintStart_toEndOf="@+id/etUsersB"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionB" />
+
+    <EditText
+        android:id="@+id/etTrafficB"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:background="@drawable/et_style"
+        android:fontFamily="@font/orbitron_regular"
+        android:hint="A"
+        android:maxLength="6"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="@+id/etUsersB"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionB" />
+
+    <Button
+        android:id="@+id/btnGoB"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/orbitron_regular"
+        android:text="@string/go"
+        app:layout_constraintEnd_toEndOf="@+id/etKB"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/etUsersB"
+        app:layout_constraintTop_toBottomOf="@+id/etUsersB" />
+
+    <TextView
+        android:id="@+id/tvBres"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/tv_style"
+        android:fontFamily="@font/orbitron_regular"
+        android:gravity="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/etTrafficB"
+        app:layout_constraintStart_toStartOf="@+id/etKB"
+        app:layout_constraintTop_toBottomOf="@+id/etKB" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chBinomial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoB" />
+</androidx.constraintlayout.widget.ConstraintLayout>
