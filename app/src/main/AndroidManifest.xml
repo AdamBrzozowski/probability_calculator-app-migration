@@ -26,6 +26,10 @@
         <activity
             android:name=".OutageActivity"
             android:label="@string/outage_activity_name" />
+        <activity android:name=".PoissonActivity" android:label="Poisson"/>
+        <activity
+            android:name=".ErlangActivity"
+            android:label="ErlangB" />
     </application>
 
 </manifest>

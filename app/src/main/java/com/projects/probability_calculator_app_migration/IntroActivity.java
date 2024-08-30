@@ -17,18 +17,18 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         Button btnOP = findViewById(R.id.btnOP);
 
         btnOP.setOnClickListener(this);
-//
-//        Button btnErl = findViewById(R.id.btnErl);
-//
-//        btnErl.setOnClickListener(this);
+
+        Button btnErl = findViewById(R.id.btnErl);
+
+        btnErl.setOnClickListener(this);
 //
 //        Button btnCN = findViewById(R.id.btnCN);
 //
 //        btnCN.setOnClickListener(this);
 //
-//        Button btnPoisson = findViewById(R.id.btnPoisson);
-//
-//        btnPoisson.setOnClickListener(this);
+        Button btnPoisson = findViewById(R.id.btnPoisson);
+
+        btnPoisson.setOnClickListener(this);
 //
 //        Button btnBinomial = findViewById(R.id.btnBinomial);
 //
@@ -58,6 +58,14 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
 //                i = new Intent(this, BinomialActivity.class);
 //                startActivity(i);
 //                break;
+        }
+        else if (v.getId() == R.id.btnPoisson) {
+            i = new Intent(this, PoissonActivity.class);
+            startActivity(i);
+        }
+        else if (v.getId() == R.id.btnErl) {
+            i = new Intent(this, ErlangActivity.class);
+            startActivity(i);
         }
     }
 }

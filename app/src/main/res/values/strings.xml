@@ -94,7 +94,7 @@
     <string name="cci">CCI</string>
     <string name="K">K</string>
     <string name="etha">Eta</string>
-    <string name="msg_prob_calls">Probability %d active calls is %s</string>
+    <string name="msg_prob_calls">Probability %d active calls is %s%%</string>
     <string name="msg_OoB">Values Out of Bounds</string>
     <string name="chBinomial_label">Probability k active calls</string>
     <string name="msg_descr_calls">Insert Active Calls</string>
